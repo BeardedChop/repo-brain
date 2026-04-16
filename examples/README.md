@@ -10,12 +10,18 @@ copy the folder you need, edit the placeholders, drop into your project root.
 - `mobile-app/` — a react native / expo mobile app
 
 each template includes:
-- AGENTS.md (filled in with realistic defaults)
+- AGENTS.md (filled in with realistic defaults, testing guidance, and code patterns)
 - CLAUDE.md
 - SOUL.md
 - USER.md
 - TOOLS.md
-- SECURITY.md (adapted for that stack)
+- SECURITY.md (adapted for that stack, includes logging/monitoring checklist)
+- `.github/workflows/ci.yml` (GitHub Actions: lint, test, build, security audit)
+- pre-commit hooks (`.husky/` + `.lintstagedrc.json` for JS, `.pre-commit-config.yaml` for Python)
+- dependency file (`package.json` or `requirements.txt`)
+
+the python-api template also includes:
+- `Dockerfile` and `docker-compose.yml` for containerized development
 
 ## how to use
 
