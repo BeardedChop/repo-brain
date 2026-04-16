@@ -8,6 +8,8 @@ these files are the brain.
 
 ## what's in here
 
+### brain files (the templates you copy into your project)
+
 | file | what it does |
 |------|-------------|
 | `AGENTS.md` | the rulebook. how AI agents should behave in this repo |
@@ -17,12 +19,27 @@ these files are the brain.
 | `TOOLS.md` | tool-specific notes, API references, environment setup |
 | `SECURITY.md` | pre-flight checklist for common AI-generated security mistakes |
 
+### also in this repo
+
+| path | what it does |
+|------|-------------|
+| `examples/` | pre-filled templates for next.js, python API, and mobile apps |
+| `docs/getting-started.md` | step-by-step guide for setting up your first AI-operable repo |
+| `CHANGELOG.md` | what's changed between versions |
+
 ## quick start
 
-1. copy the files you need into your project root
+**option A: start from scratch**
+1. copy the root brain files you need into your project root
 2. edit each one to match your project
 3. delete the ones you don't need (you probably don't need all six)
 4. start coding — the AI will pick these up automatically
+
+**option B: start from an example**
+1. pick a template from `examples/` that matches your stack
+2. copy the whole folder into your project root
+3. edit the placeholders to match your project
+4. you get brain files + CI/CD, pre-commit hooks, and dependency files out of the box
 
 ## which files do i actually need?
 
@@ -75,14 +92,20 @@ other AI tools (Cursor, Codex, Gemini) read `AGENTS.md` directly and ignore the 
 
 ## what to put in each file
 
-see the individual files in this repo for working examples. each one has comments explaining what goes where and why.
+the root files in this repo are blank templates with placeholders — fill in the blanks for your project. for real-world examples with everything filled in, check the `examples/` directory.
 
 ## examples
 
 check `examples/` for pre-filled templates for different project types:
-- a next.js web app
-- a python api
-- a mobile app
+- **nextjs-webapp/** — Next.js 15, TypeScript, Tailwind, Vercel
+- **python-api/** — FastAPI, SQLAlchemy, PostgreSQL, Docker
+- **mobile-app/** — Expo SDK 52+, TypeScript, Expo Router, EAS Build
+
+each example includes all six brain files filled in with realistic defaults, plus:
+- GitHub Actions CI/CD workflow (lint, test, build, security audit)
+- pre-commit hooks (Husky + lint-staged for JS, pre-commit for Python)
+- dependency files (`package.json` or `requirements.txt`)
+- Docker setup (python-api includes `Dockerfile` + `docker-compose.yml`)
 
 ## pro tips
 
