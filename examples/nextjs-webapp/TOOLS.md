@@ -27,6 +27,16 @@ npx prisma generate  # regenerate prisma client
 npx prisma migrate   # run migrations
 ```
 
+## pre-commit hooks
+
+husky + lint-staged runs automatically on commit. to set up:
+
+```bash
+npm install                      # husky prepare script runs automatically
+```
+
+linting and formatting run on staged files before every commit. see `.lintstagedrc.json` for config.
+
 ## known issues
 
 - Vercel deployment: make sure env vars are set in the Vercel dashboard

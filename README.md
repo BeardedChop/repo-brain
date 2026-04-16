@@ -65,6 +65,14 @@ your-project/
 | openai codex | `AGENTS.md` | looks for agent instructions at root |
 | gemini cli | `AGENTS.md` | follows the same convention |
 
+## how `import AGENTS.md` works
+
+you'll see `import AGENTS.md` at the top of `CLAUDE.md`. this is a Claude Code feature — when Claude Code reads `CLAUDE.md`, it sees the import and loads `AGENTS.md` too. this means you write shared rules once in `AGENTS.md` and put Claude-specific overrides in `CLAUDE.md` without duplicating anything.
+
+other AI tools (Cursor, Codex, Gemini) read `AGENTS.md` directly and ignore the import line. so the system works for everyone — one set of rules, no duplication.
+
+**note:** this is a Claude Code-specific feature. it doesn't work in Cursor's `.cursor/rules/` files or other tools. for those, just make sure `AGENTS.md` contains all the shared rules.
+
 ## what to put in each file
 
 see the individual files in this repo for working examples. each one has comments explaining what goes where and why.

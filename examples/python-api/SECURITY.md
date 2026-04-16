@@ -63,6 +63,25 @@ run these tests before deploying:
 - [OWASP top 10](https://owasp.org/www-project-top-ten/)
 - [dependency audit](https://docs.npmjs.com/cli/commands/npm-audit)
 
+## logging & monitoring
+
+### do
+
+- [ ] log authentication events (login, logout, failed attempts)
+- [ ] log authorization failures (access denied)
+- [ ] log unexpected errors with stack traces (server-side only)
+- [ ] use structured logging (JSON format) — use `structlog` or `python-json-logger`
+- [ ] include request IDs for tracing (use middleware to inject)
+
+### don't
+
+- [ ] no secrets, tokens, or API keys in log output
+- [ ] no passwords (even hashed ones) in logs
+- [ ] no PII in production logs unless required and encrypted
+- [ ] no full request/response bodies — log summaries instead
+- [ ] no stack traces in user-facing error responses
+- [ ] no debug-level logging enabled in production
+
 ## when to escalate
 
 if you find any of these, stop and get human review:
