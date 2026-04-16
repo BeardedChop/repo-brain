@@ -63,6 +63,34 @@ run these tests before deploying:
 - [OWASP top 10](https://owasp.org/www-project-top-ten/)
 - [dependency audit](https://docs.npmjs.com/cli/commands/npm-audit)
 
+## logging & monitoring
+
+safe logging practices for AI-generated code:
+
+### do
+
+- [ ] log authentication events (login, logout, failed attempts)
+- [ ] log authorization failures (access denied)
+- [ ] log unexpected errors with stack traces (server-side only)
+- [ ] use structured logging (JSON format) for easier parsing
+- [ ] include request IDs for tracing across services
+- [ ] set up alerts for repeated auth failures (brute force detection)
+
+### don't
+
+- [ ] no secrets, tokens, or API keys in log output
+- [ ] no passwords (even hashed ones) in logs
+- [ ] no PII (email, phone, address) in production logs unless required and encrypted
+- [ ] no full request/response bodies — log summaries instead
+- [ ] no stack traces in user-facing error responses
+- [ ] no debug-level logging enabled in production
+
+### common AI mistakes with logging
+
+- AI adds `console.log(user)` or `print(request.body)` that dumps full objects including sensitive fields
+- AI catches errors silently (`except: pass` or empty catch blocks) — always log or re-raise
+- AI logs tokens for "debugging" and forgets to remove them
+
 ## when to escalate
 
 if you find any of these, stop and get human review:

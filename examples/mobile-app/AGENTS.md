@@ -61,6 +61,37 @@ npx expo run:android  # Android emulator
 eas build --platform all   # production build
 ```
 
+## testing
+
+- jest with jest-expo preset, run with `npm run test`
+- tests live next to the code they test: `useAuth.test.ts`, `UserCard.test.tsx`
+
+### what to test
+
+- **always test:** custom hooks, utility functions, API client logic, state stores
+- **usually test:** complex interactive components, navigation guards, form validation
+- **skip testing:** static screens, simple layout components, third-party wrappers
+
+### test patterns
+
+```tsx
+// hooks/useAuth.test.ts
+import { renderHook, act } from "@testing-library/react-native";
+import { useAuth } from "./useAuth";
+test("starts logged out", () => {
+  const { result } = renderHook(() => useAuth());
+  expect(result.current.isLoggedIn).toBe(false);
+});
+
+// components/UserCard.test.tsx
+import { render, screen } from "@testing-library/react-native";
+import { UserCard } from "./UserCard";
+test("displays user name", () => {
+  render(<UserCard name="Alice" />);
+  expect(screen.getByText("Alice")).toBeTruthy();
+});
+```
+
 ## security
 
 - see `SECURITY.md`
