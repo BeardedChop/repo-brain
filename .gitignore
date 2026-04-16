@@ -51,6 +51,3 @@ venv/
 *.key
 *.p12
 *.jks
-
-# launch content — drafts, never public
-LAUNCH.md
