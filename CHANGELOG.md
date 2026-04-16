@@ -15,7 +15,7 @@ all notable changes to this project will be documented in this file.
 - logging and monitoring section in SECURITY.md
 - explanation of `import AGENTS.md` syntax in the README
 
-## [0.1.0] - 2025-01-01
+## [0.1.0] - 2026-04-15
 
 ### added
 
