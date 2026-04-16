@@ -133,7 +133,7 @@ MIT. do whatever you want with these.
 
 made by [@BChopLXXXII](https://x.com/BChopLXXXII)
 
-for solo builders who want their AI to just... get it
+built for solo builders who want their AI to just... get it
 
 ship it. 🚀
 
