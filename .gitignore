@@ -1,0 +1,56 @@
+# gitignore for AI-operable projects
+# this is a starting point — add/remove as needed
+
+# dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# testing
+coverage/
+
+# production
+build/
+dist/
+.next/
+out/
+
+# misc
+.DS_Store
+*.pem
+.env
+.env.local
+.env.*.local
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# editor
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+
+# OS
+Thumbs.db
+
+# python
+__pycache__/
+*.py[cod]
+*.egg-info/
+venv/
+
+# expo
+.expo/
+.expo-shared/
+
+# security — never commit these
+*.key
+*.p12
+*.jks
+
+# launch content — drafts, never public
+LAUNCH.md
