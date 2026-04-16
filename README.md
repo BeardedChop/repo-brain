@@ -110,7 +110,7 @@ MIT. do whatever you want with these.
 
 made by [@BChopLXXXII](https://x.com/BChopLXXXII)
 
-built for vibe coders who just want their AI to feel less... corporate.
+for solo builders who want their AI to just... get it
 
 ship it. 🚀
 
