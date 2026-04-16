@@ -63,6 +63,20 @@ run these tests before deploying:
 - [OWASP top 10](https://owasp.org/www-project-top-ten/)
 - [dependency audit](https://docs.npmjs.com/cli/commands/npm-audit)
 
+## logging & monitoring
+
+### do
+
+- [ ] log API errors and failed requests (for crash reporting)
+- [ ] use a crash reporting service (Sentry, Bugsnag)
+- [ ] include device/OS info in error reports
+
+### don't
+
+- [ ] no secrets or tokens in log output
+- [ ] no PII in crash reports unless anonymized
+- [ ] no `console.log` in production builds — use a logging library with level control
+
 ## when to escalate
 
 if you find any of these, stop and get human review:
