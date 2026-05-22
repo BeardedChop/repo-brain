@@ -51,3 +51,6 @@ venv/
 *.key
 *.p12
 *.jks
+
+# internal docs — never public
+*LAUNCH*
