@@ -125,15 +125,13 @@ if you find a pattern that works well, open a PR. this template is built by peop
 
 ---
 
-## license
+---
 
 MIT. do whatever you want with these.
 
-## about
+made by @BChopLXXXII
 
-made by [@BChopLXXXII](https://x.com/BChopLXXXII)
-
-built for solo builders who want their AI to just... get it
+built for vibe coders who just want their AI to feel less... corporate.
 
 ship it. 🚀
 
