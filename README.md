@@ -1,4 +1,4 @@
-<img width="1632" height="656" alt="Gemini_Generated_Image_d939xad939xad939" src="https://github.com/user-attachments/assets/797dc6d8-63f1-407e-832b-dae4c0bcdd9a" />
+<img width="2320" height="464" alt="Generated Image April 18, 2026 - 2_48AM" src="https://github.com/user-attachments/assets/9a0002a3-395b-4741-875c-b27d0debfdb2" />
 # repo-brain
 
 a starter template for building repos that AI agents actually understand.
