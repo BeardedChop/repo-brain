@@ -1,4 +1,4 @@
-<img width="2320" height="464" alt="Generated Image April 18, 2026 - 2_48AM" src="https://github.com/user-attachments/assets/9a0002a3-395b-4741-875c-b27d0debfdb2" />
+<img width="2048" height="1143" alt="6 MDs" src="https://github.com/user-attachments/assets/e7f41f52-daaf-45dd-830f-8df13927e0da" />
 # repo-brain
 
 a starter template for building repos that AI agents actually understand.
