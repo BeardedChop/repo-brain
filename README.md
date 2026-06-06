@@ -1,3 +1,4 @@
+<img width="2048" height="1143" alt="6 MDs" src="https://github.com/user-attachments/assets/e7f41f52-daaf-45dd-830f-8df13927e0da" />
 # repo-brain
 
 a starter template for building repos that AI agents actually understand.
