@@ -31,7 +31,7 @@
     "eslint-config-expo": "56.0.4",
     "husky": "^9.0.0",
     "jest": "^30.4.2",
-    "jest-expo": "56.0.4",
+    "jest-expo": "56.0.5",
     "lint-staged": "^17.0.7",
     "prettier": "^3.0.0",
     "typescript": "^6.0.3"
