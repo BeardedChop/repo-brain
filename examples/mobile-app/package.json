@@ -33,7 +33,7 @@
     "jest": "^30.4.2",
     "jest-expo": "56.0.5",
     "lint-staged": "^17.0.7",
-    "prettier": "^3.8.4",
+    "prettier": "^3.9.5",
     "typescript": "^6.0.3"
   },
   "overrides": {
