@@ -34,7 +34,7 @@
     "jest-expo": "56.0.5",
     "lint-staged": "^17.2.0",
     "prettier": "^3.9.5",
-    "typescript": "^6.0.3"
+    "typescript": "^7.0.2"
   },
   "overrides": {
     "brace-expansion": "5.0.9",
