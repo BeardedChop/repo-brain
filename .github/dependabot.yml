@@ -9,6 +9,11 @@ updates:
     directory: "/examples/mobile-app"
     schedule:
       interval: "weekly"
+    open-pull-requests-limit: 1
+    groups:
+      mobile-dependencies:
+        patterns:
+          - "*"
 
   - package-ecosystem: "npm"
     directory: "/examples/nextjs-webapp"
@@ -19,3 +24,8 @@ updates:
     directory: "/examples/python-api"
     schedule:
       interval: "weekly"
+    open-pull-requests-limit: 1
+    groups:
+      python-dependencies:
+        patterns:
+          - "*"
