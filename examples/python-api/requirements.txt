@@ -1,12 +1,12 @@
 # core
-fastapi>=0.136.3
-uvicorn[standard]>=0.51.0
+fastapi>=0.141.1
+uvicorn[standard]>=0.52.4
 pydantic>=2.13.4
-pydantic-settings>=2.14.1
+pydantic-settings>=2.15.0
 
 # database
-sqlalchemy>=2.0.51
-alembic>=1.14.0
+sqlalchemy>=2.0.52
+alembic>=1.19.1
 psycopg2-binary>=2.9.12
 alembic>=1.18.4
 psycopg2-binary>=2.9.0
@@ -17,9 +17,9 @@ python-jose[cryptography]>=3.5.0
 passlib[bcrypt]>=1.7.4
 
 # dev
-ruff>=0.8.0
-mypy>=2.1.0
-pre-commit>=4.0.0
+ruff>=0.16.3
+mypy>=2.3.1
+pre-commit>=4.6.2
 
 # testing
 pytest>=9.1.1
